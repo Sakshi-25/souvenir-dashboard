@@ -16,6 +16,7 @@ const Navbar = () => {
   const classes = useStyles();
 
   const logout = () => {
+    // eslint-disable-next-line 
     dispatch({ type: actionType.LOGOUT });
 
     history.push('/auth');

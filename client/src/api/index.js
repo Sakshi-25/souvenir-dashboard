@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://memories-backend.zeet.app' });
+// const API = axios.create({ baseURL: 'https://memories-backend.zeet.app' });
+
+const url = 'https://souvenir-dashboard.herokuapp.com/posts';
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
